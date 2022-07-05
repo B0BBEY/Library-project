@@ -1,0 +1,832 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(images/bookstore-back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    min-height: 909px;
+}
+
+
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+
+
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 0px 18px 5px rgba(66, 68, 90, 1);
+}
+
+
+
+
+
+
+
+/* HEADER SECTION */
+
+.header {
+    background: rgb(62, 45, 19);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 30px 15px 10px 15px;
+}
+
+
+
+
+.logo {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.logo:hover {
+    filter: brightness(110%);
+}
+
+.header-main {
+    display: inline-block;
+}
+
+.info-top {
+    text-align: right;
+    padding: 5px 0;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, rgba(62, 45, 19,1) 0%, rgba(255,165,0,1) 65%) 1;
+}
+
+.info-top a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.info-top a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.info-bottom {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.info-bottom form {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.search-input {
+    padding: 12px;
+    width: 80%;
+    border-radius: 10px 0 0 10px ;
+    border: 2px solid orange;
+    border-right: none;
+    outline: none;
+}
+
+.search-btn {
+    padding: 12px;
+    background: orange;
+    border: 2px solid orange;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+
+
+
+
+.info-bottom-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.shop-cart {
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+}
+
+.clipboard {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-cart-btn {
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    word-spacing: 3px;
+    background: orange;
+    position: relative;
+    transition: all .4s;
+}
+
+.shop-cart-amount {
+    background: red;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.shop-cart-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, rgba(254,164,1,1) 63%, rgba(199,117,37,1) 100%);
+    filter: brightness(110%);
+}
+
+
+
+
+
+/* NAVBAR SECTION */
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    background: rgb(129, 96, 41);
+}
+
+
+
+
+.categories {
+    position: relative;
+}
+
+.categories-menu {
+    position: absolute;
+    top: 38px;
+    background: rgb(129, 96, 41);
+    width: 100%;
+    display: none;
+}
+
+.categories-menu div {
+    padding: 8px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(126deg, rgba(255,165,0,1) 21%, rgba(255,255,255,0) 100%) 1;
+}
+
+.categories-menu div:hover {
+    padding-left: 12px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(126deg, rgba(255,165,0,1) 21%, rgba(255,255,255,0) 100%) 1;
+}
+
+
+
+
+.categories, 
+.special-offer, 
+.outlet,  
+.bestsellers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid rgb(129, 96, 41);
+}
+
+.categories a, 
+.special-offer a, 
+.outlet a,  
+.bestsellers a {
+    color: white;
+    text-decoration: none;
+}
+
+.categories:hover, 
+.special-offer:hover, 
+.outlet:hover,  
+.bestsellers:hover {
+    cursor: pointer;
+    border: 1px solid;
+    border-image: linear-gradient(0deg, rgba(255,165,0,1) 0%, rgba(129,96,41,0) 80%) 1;
+}
+
+
+
+
+
+
+/* MAIN AND CATEGORIES */
+
+.main {
+    background: rgb(98, 69, 42);
+    padding: 25px;
+    display: block;
+}
+
+.content {
+    border: 4px solid orange;
+    border-radius: 10px;
+    background: white;
+}
+
+.bestsellers-header,
+.discount-header,
+.outlet-header,
+.fantasy-header,
+.history-header,
+.fairy-tales-header,
+.science-header,
+.comics-header,
+.lectures-header {
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    padding: 10px;
+    font-size: 20px;
+    color: orange;
+    font-weight: bolder;
+    border: 1px solid orange ;
+    border-bottom: 3px solid orange;
+}
+
+
+
+
+
+/* CATEGORIES MAIN SECTION */
+
+.fantasy-section,
+.history-section,
+.fairy-tales-section,
+.science-section,
+.comics-section,
+.lectures-section {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.fantasy-section div,
+.history-section div,
+.fairy-tales-section div,
+.science-section div,
+.comics-section div,
+.lectures-section div {
+    padding: 8px;
+}
+
+.fantasy-section div img,
+.history-section div img,
+.fairy-tales-section div img,
+.science-section div img,
+.comics-section div img,
+.lectures-section div img {
+    padding: 20px;
+    display: block;
+    height: 17vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-div-border {
+    border: 1px solid orange;
+}
+
+.book-info {
+    width: 100%;
+    min-height: 120px;
+}
+
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.author {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.value,
+.currency {
+    font-size: 16px;
+    font-weight: bolder;
+    color: red;
+    line-height: 1.5;
+}
+
+.book-info-btns {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+/* discount */
+
+.discount-img {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.discount-emblem {
+    position: absolute;
+    display: block;
+    top: 30%;
+    right: 0;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* outlet */
+
+.outlet-img {
+    position: relative;
+}
+
+.outlet-emblem {
+    position: absolute;
+    background: green;
+    color: white;
+    font-weight: bold;
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+/* BESTSELLERS MAIN SECTION */
+
+.bestsellers-section,
+.discount-section,
+.outlet-section {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.bestsellers-section div,
+.discount-section div,
+.outlet-section div {
+    padding: 8px;
+}
+
+.bestsellers-section div img,
+.discount-section div img,
+.outlet-section div img {
+    padding: 20px;
+    display: block;
+    height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-div-border {
+    border: 1px solid orange;
+}
+
+.book-info {
+    width: 100%;
+    min-height: 120px;
+}
+
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.author {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.value {
+    font-size: 16px;
+    font-weight: bolder;
+    color: red;
+    line-height: 1.5;
+}
+
+.book-info-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.to-shop-cart,
+.to-clipboard {
+    width: 100%;
+    margin: 0 5px;
+    height: 3vh;
+    border: 2px solid rgb(185, 121, 3);
+    background: orange;
+    border-radius: 5px;
+}
+
+.to-shop-cart:hover,
+.to-clipboard:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+
+
+
+
+
+/* MAIN SHOP CARD */
+
+.main-shop-cart {
+    background: rgb(98, 69, 42);
+    padding: 25px;
+    display: none;
+}
+
+.content-shop-cart {
+    border: 4px solid orange;
+    border-radius: 10px;
+    background: white;
+    min-height: 698px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.ov-val {
+    position: absolute;
+    bottom: 15px;
+    font-size: 20px;
+}
+
+.book-list {
+    list-style: none;
+    
+}
+
+
+.book-list-element {
+    border: 3px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-list-img {
+    width: 10%;
+}
+
+
+
+
+
+.book-list-one {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+
+
+.book-list-two {
+    display: flex;
+    align-items: center;
+}
+
+.book-list-amount {
+    width: 3em;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 2px;
+}
+
+.book-list-value {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.book-list-button {
+    margin-left: 20px;
+    background: none;
+    border: none;
+}
+
+.book-list-button:hover {
+    cursor: pointer;
+}
+
+
+
+.book-list-title {
+    font-size: 2vw;
+    grid-row-start: 1;
+}
+
+.book-list-author {
+    font-size: 1.2vw;
+    grid-row-start: 2;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.back-btn {
+    border: none;
+    background: none;
+}
+
+.back-btn i:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.show-grid {
+    display: grid;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    
+    .container {
+        max-width: 100%;
+    }
+
+    .fantasy-section,
+    .history-section,
+    .fairy-tales-section,
+    .science-section,
+    .comics-section,
+    .lectures-section {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .fantasy-section div img,
+    .history-section div img,
+    .fairy-tales-section div img,
+    .science-section div img,
+    .comics-section div img,
+    .lectures-section div img {
+        padding: 20px;
+        display: block;
+        height: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bestsellers-section div img,
+    .discount-section div img,
+    .outlet-section div img {
+        padding: 20px;
+        display: block;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .fantasy-section,
+    .history-section,
+    .fairy-tales-section,
+    .science-section,
+    .comics-section,
+    .lectures-section {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+
+    .fantasy-section div img,
+    .history-section div img,
+    .fairy-tales-section div img,
+    .science-section div img,
+    .comics-section div img,
+    .lectures-section div img {
+        padding: 20px;
+        display: block;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info-bottom {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+
+    .bestsellers-section,
+    .discount-section,
+    .outlet-section {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .bestsellers-section div img,
+    .discount-section div img,
+    .outlet-section div img {
+        padding: 20px;
+        display: block;
+        height: 35vw;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .fantasy-section,
+    .history-section,
+    .fairy-tales-section,
+    .science-section,
+    .comics-section,
+    .lectures-section {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .fantasy-section div img,
+    .history-section div img,
+    .fairy-tales-section div img,
+    .science-section div img,
+    .comics-section div img,
+    .lectures-section div img {
+        padding: 20px;
+        display: block;
+        height: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bestsellers-section,
+    .discount-section,
+    .outlet-section {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .bestsellers-section div img,
+    .discount-section div img,
+    .outlet-section div img {
+        padding: 20px;
+        display: block;
+        height: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    .sc-span {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        background: rgb(129, 96, 41);
+    }
+
+    .categories, 
+    .special-offer, 
+    .outlet,  
+    .bestsellers {
+        border-bottom: 1px solid rgb(159, 118, 49);
+    }
+
+    .book-list-element {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .book-list-img {
+        width: 100%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .book-list-one {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .book-list-title {
+        font-size: 3vw;
+    }
+
+    .book-list-author {
+        font-size: 2vw;
+    }
+
+    .book-list-two {
+        grid-column-start: 2;
+        align-items: center;
+        justify-content: right;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .fantasy-section,
+    .history-section,
+    .fairy-tales-section,
+    .science-section,
+    .comics-section,
+    .lectures-section {
+        display: block
+    }
+
+    .fantasy-section div img,
+    .history-section div img,
+    .fairy-tales-section div img,
+    .science-section div img,
+    .comics-section div img,
+    .lectures-section div img {
+        padding: 20px;
+        display: block;
+        height: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bestsellers-section,
+    .discount-section,
+    .outlet-section {
+        display: block;
+    }
+
+    .bestsellers-section div img,
+    .discount-section div img,
+    .outlet-section div img {
+        padding: 20px;
+        display: block;
+        height: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    .sc-span {
+        display: none;
+    }
+
+
+
+
+}

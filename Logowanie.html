@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        
+        <title>Księgarnia</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Logowanie.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        
+        <div class="container">
+
+<!-- HEADER SECTION -->
+
+            <div class="header">
+
+                <div class="logo">
+
+                    <a href="ksiegarnia.html"><img src="images/book-icon.png" style="width: 100%;"></a>
+
+                </div>
+
+                <div class="header-main">
+
+                    <div class="info-top">
+
+                        <a href="KontaktKsiegarnia.html">Kontakt</a>
+                        <a href="DostawaKsiegarnia.html">Dostawa</a>
+                        <a href="Logowanie.html" class="login-icon"><i class="fa fa-user" style="color: lightgrey;"></i></a>
+
+                    </div>
+
+                    <div class="info-bottom">
+
+                        <div class="info-bottom-form">
+
+                            <form action="search" method="post">
+
+                                <input type="text" placeholder="Podaj tytuł lub autora" class="search-input">
+                                <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+
+                            </form>
+
+                        </div>
+
+                        <div class="info-bottom-btns">
+
+                            <div class="shop-cart">
+
+                                <a href="ksiegarnia.html">
+
+                                    <button class="shop-cart-btn background"><span class="sc-span">Koszyk</span> <i class="fa fa-basket-shopping"></i>
+                                        <div class="shop-card-amount">0</div>
+                                    </button>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>    
+
+            </div>
+
+            <div class="main">
+
+                <div class="content">
+
+                    <div class="login">
+
+                        <span style="font-size: 22px; font-weight: bold;">Zaloguj się</span> <br> <br> <br>
+
+                        <form action="send" method="POST" class="login-form">
+
+                            <span>Login</span> <br>
+                            <input type="text" required> <br>
+
+                            <span>Hasło</span> <br>
+                            <input type="password" required> <br>
+
+                            <button type="submit" class="login-btn">Zaloguj</button>
+
+                        </form>
+
+                    </div>
+
+                    <div class="registration">
+
+                        <span style="font-size: 22px; font-weight: bold;">Zarejestruj się</span> <br> <br> <br>
+
+                        <form action="send" method="POST" class="registration-form">
+
+                            <span>Login</span> <br>
+                            <input type="text" required> <br>
+
+                            <span>Email</span> <br>
+                            <input type="text" required> <br>
+
+                            <span>Hasło</span> <br>
+                            <input type="password" required> <br>
+
+                            <span>Powtórz hasło</span> <br>
+                            <input type="password" required> <br>
+
+                            <button type="submit" class="registration-btn">Zarejestruj się</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="ksiegarnia.js"></script>
+
+    </body>
+
+</html>

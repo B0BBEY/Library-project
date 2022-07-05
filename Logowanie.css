@@ -1,0 +1,258 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(images/bookstore-back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    min-height: 909px;
+}
+
+
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+
+
+
+.container {
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 0px 18px 5px rgba(66, 68, 90, 1);
+}
+
+
+
+
+
+
+
+/* HEADER SECTION */
+
+.header {
+    background: rgb(62, 45, 19);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 30px 15px 10px 15px;
+    border-bottom: 1px solid orange;
+}
+
+
+.login-icon {
+    pointer-events: none;
+}
+
+.logo {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.logo:hover {
+    filter: brightness(110%);
+}
+
+.header-main {
+    display: inline-block;
+}
+
+.info-top {
+    text-align: right;
+    padding: 5px 0;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, rgba(62, 45, 19,1) 0%, rgba(255,165,0,1) 65%) 1;
+}
+
+.info-top a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.info-top a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.info-bottom {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.info-bottom form {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.search-input {
+    padding: 12px;
+    width: 80%;
+    border-radius: 10px 0 0 10px ;
+    border: 2px solid orange;
+    border-right: none;
+    outline: none;
+}
+
+.search-btn {
+    padding: 12px;
+    background: orange;
+    border: 2px solid orange;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+
+
+
+
+.info-bottom-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-cart {
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+}
+
+.shop-cart-btn {
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    word-spacing: 3px;
+    background: orange;
+    position: relative;
+    transition: all .4s;
+}
+
+.shop-card-amount {
+    background: red;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.shop-cart-btn:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+
+
+
+
+/* MAIN */
+
+.main {
+    background: rgb(98, 69, 42);
+    padding: 25px;
+}
+
+.content {
+    border: 4px solid orange;
+    border-radius: 10px;
+    background: rgb(143, 104, 63);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white; 
+}
+
+.login {
+    border-right: 2px solid orange;
+    padding: 10px;
+    text-align: center;
+}
+
+.registration {
+    border-left: 2px solid orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.login input,
+.registration input {
+    outline: none;
+    margin: 6px 0 10px 0;
+    padding: 4px 5px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.login-btn,
+.registration-btn {
+    margin: 10px;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.login-btn:hover,
+.registration-btn:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    
+    .container {
+        max-width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .content {
+        display: block;
+    }
+
+    .login {
+        border-bottom: 2px solid orange;
+        border-right: none;
+        padding: 30px 0;
+    }
+
+    .registration {
+        padding: 30px 0;
+    }
+
+    .sc-span {
+        display: none;
+    }
+}
+

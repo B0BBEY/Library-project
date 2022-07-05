@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        
+        <title>Księgarnia</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="ksiegarnia.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        
+        <div class="container">
+
+<!-- HEADER SECTION -->
+
+            <div class="header">
+
+                <div class="logo">
+
+                    <a href="#"><img src="images/book-icon.png" style="width: 100%;"></a>
+
+                </div>
+
+                <div class="header-main">
+
+                    <div class="info-top">
+
+                        <a href="KontaktKsiegarnia.html">Kontakt</a>
+                        <a href="DostawaKsiegarnia.html">Dostawa</a>
+                        <a href="Logowanie.html"><i class="fa fa-user"></i></a>
+
+                    </div>
+
+                    <div class="info-bottom">
+
+                        <div class="info-bottom-form">
+
+                            <form action="search" method="post">
+
+                                <input type="text" placeholder="Podaj tytuł lub autora" class="search-input">
+                                <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+
+                            </form>
+
+                        </div>
+
+                        <div class="info-bottom-btns">
+
+                            <div class="shop-cart">
+
+                                <a href="#">
+
+                                    <button class="shop-cart-btn background"> <span class="sc-span">Koszyk</span> <i class="fa fa-basket-shopping"></i>
+                                        <div class="shop-cart-amount"> <span class="shop-am">0</span> </div>
+                                    </button>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>    
+
+            </div>
+
+<!-- NAVBAR SECTION -->
+
+            <div class="navbar">
+
+                <div class="categories">
+
+                    <span style="color: white;">KATEGORIE <i class="fa fa-angle-down"></i></span>
+                    <div class="categories-menu">
+
+                        <a href="katFantastyka.html"><div>Fantastyka</div></a>
+                        <a href="katHistoryczne.html"><div>Historyczne</div></a>
+                        <a href="katBajki.html"><div>Bajki</div></a>
+                        <a href="katNaukowe.html"><div>Naukowe</div></a>
+                        <a href="katKomiksy.html"><div>Komiksy</div></a>
+                        <a href="katLektury.html"><div>Lektury</div></a>
+                        
+                    </div>
+                
+
+                </div>
+
+                <div class="bestsellers">
+
+                    <a href="#BESTSELLERS"><i class="fa fa-chart-line"></i> BESTSELLERY</a>
+
+                </div>
+
+                <div class="special-offer">
+
+                    <a href="#SPECIAL-OFFER"><i class="fa fa-percent"></i> PROMOCJE</a>
+
+                </div>
+
+                <div class="outlet">
+
+                    <a href="#OUTLET"><i class="fa fa-tag"></i> OUTLET</a>
+
+                </div>
+
+            </div>
+
+<!-- MAIN SECTION -->
+
+            <div class="main">
+
+                <div class="content">
+
+<!-- BESTSELLERS SECTION -->
+
+                    <div class="bestsellers-header" id="BESTSELLERS">
+                        <span>BESTSELLERY</span>
+                    </div>
+
+                    <div class="bestsellers-section" >
+
+<!-- heartstopper -->
+
+                        <div class="heartstopper-tom-4 book-div-border">
+                            <a href="SzczegoloweInfo/heartstopper4.html"><img class="books-images" src="images/heartstopper-tom-4.jpg" style="max-width: 100%;"></a>
+                            <div class="book-info">
+                                <span class="title">Heartstopper, Tom 4</span> <br>
+                                <span class="author">Alice Oseman</span> <br>
+                                <span class="value">43.90</span> <span class="currency">zł</span> <br>
+                            </div>
+
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- stulecie winnych -->
+
+                        <div class="stulecie-winnych book-div-border">
+                            <a href="./SzczegoloweInfo/stulecie-winnych.html"><img class="books-images" src="images/stulecie-winnych.jpg" style="max-width: 100%"></a>
+                            <div class="book-info">
+                                <span class="title">Stulecie Winnych. Początek</span> <br>
+                                <span class="author">Ałbena Grabowska</span> <br>
+                                <span class="value">39.90</span> <span class="currency">zł</span> <br>
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- doktor dolittle -->
+
+                        <div class="doktor-dolittle book-div-border">
+                            <a href="./SzczegoloweInfo/doktor-dolittle-i-jego-zwierzeta.html"><img class="books-images" src="images/Doktor-Dolittle.jpg" style="max-width: 100%;"></a>
+                            <div class="book-info">
+                                <span class="title">Doktor Dolittle i jego zwierzęta</span> <br>
+                                <span class="author">Hugh Lofting</span> <br>
+                                <span class="value">23.90</span> <span class="currency">zł</span> <br>
+                            </div>
+
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- obrazy z przeszłości -->
+
+                        <div class="doktor-dolittle book-div-border">
+                            <a href="./SzczegoloweInfo/obrazy-z-przeszlosci.html"><img class="books-images" src="images/obrazy-z-przeszlosci.jpg" style="max-width: 100%;"></a>
+                            <div class="book-info">
+                                <span class="title">Obrazy z przeszłości</span> <br>
+                                <span class="author">Remigiusz Mróz</span> <br>
+                                <span class="value">45.90</span> <span class="currency">zł</span> <br>
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- potęga podświadomości -->
+
+                        <div class="doktor-dolittle book-div-border">
+                            <a href="./SzczegoloweInfo/potega-podswiadomosci.html"><img class="books-images" src="images/potega-podswiadomosc.jpg" style="max-width: 100%;"></a>
+                            <div class="book-info">
+                                <span class="title">Potęga podświadomości</span> <br>
+                                <span class="author">Joseph Murphy</span> <br>
+                                <span class="value">29.90</span> <span class="currency">zł</span> <br>
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- mentalista -->
+
+                        <div class="doktor-dolittle book-div-border">
+                            <a href="./SzczegoloweInfo/mentalista.html"><img class="books-images" src="images/mentalista.jpg" style="max-width: 100%;"></a>
+                            <div class="book-info">
+                                <span class="title">Mentalista</span> <br>
+                                <span class="author">Camila Lackberg Henrik</span> <br>
+                                <span class="value">49.90</span> <span class="currency">zł</span> <br>
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- it ends with us -->
+
+                        <div class="doktor-dolittle book-div-border">
+                            <a href="./SzczegoloweInfo/it-ends-with-us.html"><img class="books-images" src="images/it-ends-with-us.jpg" style="max-width: 100%;"></a>
+                            <div class="book-info">
+                                <span class="title">It Ends with Us</span> <br>
+                                <span class="author">Colleen Hoover</span> <br>
+                                <span class="value">45.00</span> <span class="currency">zł</span> <br>
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+
+                        </div>
+
+<!-- gliniany most -->
+
+                        <div class="doktor-dolittle book-div-border">
+                            <a href="./SzczegoloweInfo/gliniany-most.html"><img class="books-images" src="images/gliniany most.jpg" style="max-width: 100%;"></a>
+                            <div class="book-info">
+                                <span class="title">Gliniany most</span> <br>
+                                <span class="author">Markus Zusak</span> <br>
+                                <span class="value">63.90</span> <span class="currency">zł</span> <br>
+                            </div>
+
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+<!-- DISCOUNT SECTION -->
+
+                    <div class="discount-header" id="SPECIAL-OFFER">
+
+                        <span>PROMOCJE</span>
+
+                    </div>
+
+                    <div class="discount-section">
+
+<!-- zelenski -->
+
+                        <div class="zelenski book-div-border">
+
+                            <div class="discount-img">
+
+                                <a href="#"><img class="books-images" src="images/zelenski.jpg" style="max-width: 100%;"></a>
+                                <div class="discount-emblem">
+                                    -47%
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Zełenski. Bibliografia</span> <br>
+                                <span class="author">Wojciech Rogacin</span> <br>
+                                <span class="value">22.77</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>42,99 zł</s></span>
+                            </div>
+
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- ostatni most -->
+
+                        <div class="ostatni-most book-div-border">
+
+                            <div class="discount-img">
+
+                                <a href="#"><img class="books-images" src="images/ostatni-most.jpg" style="max-width: 100%;"></a>
+                                <div class="discount-emblem">
+                                    -75%
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Ostatni most</span> <br>
+                                <span class="author">Dominika Van Eijkelenborg</span> <br>
+                                <span class="value">9.90</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>39,90 zł</s></span>                            
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- zapomnij o mnie -->
+
+                        <div class="zapomnij-o-mnie book-div-border">
+
+                            <div class="discount-img">
+
+                                <a href="#"><img class="books-images" src="images/zapomnij.jpg" style="max-width: 100%;"></a>
+                                <div class="discount-emblem">
+                                    -63%
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Zapomnij o mnie</span> <br>
+                                <span class="author">K. H. Haner</span> <br>
+                                <span class="value">14.90</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>39,90 zł</s></span>                              
+                            </div>
+
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- przyjaciolki -->
+
+                        <div class="przyjaciolki book-div-border">
+                            
+                            <div class="discount-img">
+
+                                <a href="#"><img class="books-images" src="images/przyjaciolki.jpg" style="max-width: 100%;"></a>
+                                <div class="discount-emblem">
+                                    -79%
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Przyjaciółki</span> <br>
+                                <span class="author">Anton DiSclafani</span> <br>
+                                <span class="value">7.90</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>36,90 zł</s></span>                          
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+<!-- OUTLET SECTION -->
+
+                    <div class="outlet-header" id="OUTLET">
+
+                        <SPAN>OUTLET</SPAN>
+
+                    </div>
+
+                    <div class="outlet-section">
+
+<!-- rok 1984 -->
+
+                        <div class="rok1984 book-div-border">
+
+                            <div class="outlet-img">
+
+                                <a href="#"><img class="books-images" src="images/rok1984.jpg" style="max-width: 100%;"></a>
+                                <div class="outlet-emblem">
+                                    OUTLET
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Rok 1984</span> <br>
+                                <span class="author">George Orwell</span> <br>
+                                <span class="value">17.55</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>24.99 zł</s></span>
+                            </div>
+
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- miasto duchow -->
+
+                        <div class="miasto-duchow book-div-border">
+
+                            <div class="outlet-img">
+
+                                <a href="#"><img class="books-images" src="images/miasto-duchow.jpg" style="max-width: 100%;"></a>
+                                <div class="outlet-emblem">
+                                    OUTLET
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Miasto duchów</span> <br>
+                                <span class="author">Krzysztof Bochus</span> <br>
+                                <span class="value">11.07</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>44.90 zł</s></span>                             
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- polscy himalaisci -->
+
+                        <div class="polscy-himalaisci book-div-border">
+
+                            <div class="outlet-img">
+
+                                <a href="#"><img class="books-images" src="images/polscy-himalaisci.jpg" style="max-width: 100%;"></a>
+                                <div class="outlet-emblem">
+                                    OUTLET
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Polscy himalaiści</span> <br>
+                                <span class="author">Dariusz Jaroń</span> <br>
+                                <span class="value">9.81</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>39.90 zł</s></span>                               
+                            </div>
+
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+<!-- uwiklani -->
+
+                        <div class="uwiklani book-div-border">
+                            
+                            <div class="outlet-img">
+
+                                <a href="#"><img class="books-images" src="images/uwiklani.jpg" style="max-width: 100%;"></a>
+                                <div class="outlet-emblem">
+                                    OUTLET
+                                </div>
+
+                            </div>
+
+                            <div class="book-info">
+                                <span class="title">Uwikłani. Hudson</span> <br>
+                                <span class="author">Laurelin Paige</span> <br>
+                                <span class="value">17.45</span> <span class="currency">zł</span>
+                                <span style="font-size: 13px"> <s>34.90 zł</s></span>                               
+                            </div>
+                            
+                            <div class="book-info-btns">
+                                <button class="to-shop-cart"> <i class="fa fa-basket-shopping"></i> </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+<!-- MAIN SHOP CARD -->
+
+                <div class="main-shop-cart">
+
+                    <div class="content-shop-cart">
+
+                        <div class="back">
+
+                            <button class="back-btn"><i class="fa fa-angles-left" style="font-size: 20px;"></i></button>
+
+                        </div>
+
+                        <ul class="book-list">
+
+                            
+
+
+
+                        </ul>
+
+                        <span class="ov-val"> Cena całkowita: <span class="total-value">0</span> <span>zł</span> </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <script src="ksiegarnia.js"></script>
+
+    </body>
+
+</html>
+
+
+<!-- Oczywiście strona nie jest skończona. Jest to tylko jeden z kilku moich projektów robionych w celu pokaznia poziomu i znajomości HTML, CSS oraz JavaScript  -->

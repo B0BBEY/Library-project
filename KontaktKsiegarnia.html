@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        
+        <title>Księgarnia</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="KontaktKsiegarnia.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        
+        <div class="container">
+
+<!-- HEADER SECTION -->
+
+            <div class="header">
+
+                <div class="logo">
+
+                    <a href="ksiegarnia.html"><img src="images/book-icon.png" style="width: 100%;"></a>
+
+                </div>
+
+                <div class="header-main">
+
+                    <div class="info-top">
+
+                        <span style="color: lightgrey; cursor: default; margin-right: 10px;">Kontakt</span>
+                        <a href="DostawaKsiegarnia.html">Dostawa</a>
+                        <a href="Logowanie.html"><i class="fa fa-user"></i></a>
+
+                    </div>
+
+                    <div class="info-bottom">
+
+                        <div class="info-bottom-form">
+
+                            <form action="search" method="post">
+
+                                <input type="text" placeholder="Podaj tytuł lub autora" class="search-input">
+                                <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+
+                            </form>
+
+                        </div>
+
+                        <div class="info-bottom-btns">
+
+                            <div class="shop-cart">
+
+                                <a href="ksiegarnia.html">
+
+                                    <button class="shop-cart-btn background"><span class="sc-span">Koszyk</span> <i class="fa fa-basket-shopping"></i>
+                                        <div class="shop-card-amount">0</div>
+                                    </button>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>    
+
+            </div>
+
+<!-- NAVBAR SECTION -->
+
+            <div class="navbar">
+
+                <div class="categories">
+
+                    <span style="color: white;">KATEGORIE <i class="fa fa-angle-down"></i></span>
+                    <div class="categories-menu">
+
+                        <a href="katFantastyka.html"><div>Fantastyka</div></a>
+                        <a href="katHistoryczne.html"><div>Historyczne</div></a>
+                        <a href="katBajki.html"><div>Bajki</div></a>
+                        <a href="katNaukowe.html"><div>Naukowe</div></a>
+                        <a href="katKomiksy.html"><div>Komiksy</div></a>
+                        <a href="katLektury.html"><div>Lektury</div></a>
+                        
+                    </div>
+                
+
+                </div>
+
+                <div class="bestsellers">
+
+                    <a href=""><i class="fa fa-chart-line"></i> BESTSELLERY</a>
+
+                </div>
+
+                <div class="special-offer">
+
+                    <a href=""><i class="fa fa-percent"></i> PROMOCJE</a>
+
+                </div>
+
+                <div class="outlet">
+
+                    <a href=""><i class="fa fa-tag"></i> OUTLET</a>
+
+                </div>
+
+            </div>
+        
+            <div class="contact">
+
+                <div class="contact-content">
+
+                    <span style="font-size: 18px;">Adres e-mail: kontakt@ksiegarnia.pl</span> <br> <br> <br>
+                    <span style="font-size: 18px; font-weight: bold;">Biuro Obsługi Klienta:</span> <br>
+                    <span>Tel. Kontaktowy: +48 123 456 789</span> <br>
+                    <span>Linia czynna od poniedziałku do piątku w godzinach 08:00 - 16:00</span> <br> <br> <br>
+
+                    <form action="wyslij" method="POST">
+                        <span style="font-size: 20px; font-weight: bolder;">Formularz zgłoszeniowy</span> <br> <br>
+
+                        Imię i nazwisko: <br>
+                        <input type="text" name="contactName" required> <br>
+                        Adres e-mail: <br> 
+                        <input type="text" name="contactEmail" required>  <br>
+                        Telefon: <br>
+                        <input type="text" name="contactPhoneNumber" required> <br> <br>
+
+                        <textarea class="contact-content-area" name="contactMess" id="contactMessage" cols="30" rows="10" placeholder="Wiadomość" required></textarea> <br>
+
+                        <button type="submit">Prześlij</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <script src="ksiegarnia.js"></script>
+
+        </div>
+
+    </body>
+
+</html>
